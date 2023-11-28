@@ -32,6 +32,7 @@
 .button {
   background-color: #39a94a;
   padding: 8px 16px;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 325px) {
   .title {

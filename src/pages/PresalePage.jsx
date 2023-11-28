@@ -4,7 +4,7 @@ import { Navbar, Timer, Footer, Card } from '../components';
 
 const PresalePage = () => {
   return (
-    <div className={`${styles.section} relative `}>
+    <div className={`${styles.section}`}>
       <Navbar />
 
       <main className={`text-center text-[#fff] ${styles.main} mb-[4rem]`}>

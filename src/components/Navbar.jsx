@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Navbar.module.css';
 import { logo, linkArrow } from '../assets';
 
 const Navbar = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 55) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener('scroll', changeNavbarColor);
   return (
-    <header className={styles.header}>
+    <header
+      className={`${
+        navbar ? `${styles.header} ${styles.active}` : styles.header
+      }`}
+    >
       <nav className={`${styles.navContainer}`}>
         <img src={logo} alt='Logo' className={styles.logo} />
         <div className='flex items-center gap-[3px]'>
