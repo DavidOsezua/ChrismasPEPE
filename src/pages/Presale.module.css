@@ -1,0 +1,45 @@
+.section {
+  min-height: 100vh;
+  background: #091e0d;
+}
+.main {
+  margin-top: 5rem;
+  overflow: hidden;
+}
+
+.main > * + * {
+  margin-top: 1rem;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.input {
+  width: 5rem;
+  height: 2rem;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0.2) 0%,
+    rgba(217, 217, 217, 0.1) 100%
+  );
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+}
+
+.button {
+  background-color: #39a94a;
+  padding: 8px 16px;
+}
+@media screen and (max-width: 325px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 925px) {
+  .main {
+    margin-top: 1rem;
+  }
+}
