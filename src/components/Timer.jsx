@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { twoDots } from '../assets';
 import styles from './Timer.module.css';
 
-const COUNTDOWN_TARGET = new Date('2023-12-31T23:59:59');
+const COUNTDOWN_TARGET = new Date('2023-12-25T23:59:59');
 
 const getTimeLeft = () => {
   const totalTimeLeft = COUNTDOWN_TARGET - new Date();
